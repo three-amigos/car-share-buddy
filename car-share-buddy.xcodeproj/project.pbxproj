@@ -84,14 +84,14 @@
 		84065A911B6C2C610056BF98 /* car-share-buddy */ = {
 			isa = PBXGroup;
 			children = (
+				84DADF2B1B6D1B1100221641 /* ui */,
+				84DADF2A1B6D1B0900221641 /* core */,
 				84065A921B6C2C610056BF98 /* AppDelegate.swift */,
-				84065A941B6C2C610056BF98 /* ViewController.swift */,
 				84065A961B6C2C610056BF98 /* Main.storyboard */,
 				84065A9C1B6C2C610056BF98 /* Assets.xcassets */,
 				84065A9E1B6C2C610056BF98 /* LaunchScreen.storyboard */,
 				84065AA11B6C2C610056BF98 /* Info.plist */,
 				84065A991B6C2C610056BF98 /* car_share_buddy.xcdatamodeld */,
-				84065AB61B6C32040056BF98 /* UserRepository.swift */,
 			);
 			path = "car-share-buddy";
 			sourceTree = "<group>";
@@ -104,6 +104,22 @@
 				84065ABB1B6C3D2B0056BF98 /* UserRepositoryIntegrationTests.swift */,
 			);
 			path = "car-share-buddyTests";
+			sourceTree = "<group>";
+		};
+		84DADF2A1B6D1B0900221641 /* core */ = {
+			isa = PBXGroup;
+			children = (
+				84065AB61B6C32040056BF98 /* UserRepository.swift */,
+			);
+			name = core;
+			sourceTree = "<group>";
+		};
+		84DADF2B1B6D1B1100221641 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				84065A941B6C2C610056BF98 /* ViewController.swift */,
+			);
+			name = ui;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
