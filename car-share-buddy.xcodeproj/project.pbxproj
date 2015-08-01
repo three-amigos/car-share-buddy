@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		84065A931B6C2C610056BF98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84065A921B6C2C610056BF98 /* AppDelegate.swift */; };
-		84065A951B6C2C610056BF98 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84065A941B6C2C610056BF98 /* ViewController.swift */; };
+		84065A951B6C2C610056BF98 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84065A941B6C2C610056BF98 /* MainViewController.swift */; };
 		84065A981B6C2C610056BF98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84065A961B6C2C610056BF98 /* Main.storyboard */; };
 		84065A9B1B6C2C610056BF98 /* car_share_buddy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84065A991B6C2C610056BF98 /* car_share_buddy.xcdatamodeld */; };
 		84065A9D1B6C2C610056BF98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84065A9C1B6C2C610056BF98 /* Assets.xcassets */; };
@@ -17,6 +17,8 @@
 		84065AB71B6C32040056BF98 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84065AB61B6C32040056BF98 /* UserRepository.swift */; };
 		84065AB81B6C32040056BF98 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84065AB61B6C32040056BF98 /* UserRepository.swift */; };
 		84065ABC1B6C3D2B0056BF98 /* UserRepositoryIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84065ABB1B6C3D2B0056BF98 /* UserRepositoryIntegrationTests.swift */; };
+		842013041B6D3CA000809BD2 /* DriversViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842013031B6D3CA000809BD2 /* DriversViewController.swift */; };
+		842013061B6D3CD900809BD2 /* NewDriverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842013051B6D3CD900809BD2 /* NewDriverViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +34,7 @@
 /* Begin PBXFileReference section */
 		84065A8F1B6C2C610056BF98 /* car-share-buddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "car-share-buddy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84065A921B6C2C610056BF98 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		84065A941B6C2C610056BF98 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		84065A941B6C2C610056BF98 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		84065A971B6C2C610056BF98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84065A9A1B6C2C610056BF98 /* car_share_buddy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = car_share_buddy.xcdatamodel; sourceTree = "<group>"; };
 		84065A9C1B6C2C610056BF98 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -43,6 +45,8 @@
 		84065AAC1B6C2C610056BF98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84065AB61B6C32040056BF98 /* UserRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
 		84065ABB1B6C3D2B0056BF98 /* UserRepositoryIntegrationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRepositoryIntegrationTests.swift; sourceTree = "<group>"; };
+		842013031B6D3CA000809BD2 /* DriversViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DriversViewController.swift; sourceTree = "<group>"; };
+		842013051B6D3CD900809BD2 /* NewDriverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewDriverViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,7 +121,9 @@
 		84DADF2B1B6D1B1100221641 /* ui */ = {
 			isa = PBXGroup;
 			children = (
-				84065A941B6C2C610056BF98 /* ViewController.swift */,
+				84065A941B6C2C610056BF98 /* MainViewController.swift */,
+				842013031B6D3CA000809BD2 /* DriversViewController.swift */,
+				842013051B6D3CD900809BD2 /* NewDriverViewController.swift */,
 			);
 			name = ui;
 			sourceTree = "<group>";
@@ -222,10 +228,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84065A951B6C2C610056BF98 /* ViewController.swift in Sources */,
+				84065A951B6C2C610056BF98 /* MainViewController.swift in Sources */,
 				84065A9B1B6C2C610056BF98 /* car_share_buddy.xcdatamodeld in Sources */,
 				84065AB71B6C32040056BF98 /* UserRepository.swift in Sources */,
+				842013061B6D3CD900809BD2 /* NewDriverViewController.swift in Sources */,
 				84065A931B6C2C610056BF98 /* AppDelegate.swift in Sources */,
+				842013041B6D3CA000809BD2 /* DriversViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
