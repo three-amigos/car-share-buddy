@@ -8,8 +8,31 @@
 
 import UIKit
 
-class NewDriverViewController: UIViewController {
+let repository = UserRepositoryFactory.getRepository()
 
+class NewDriverViewController: UIViewController {
+    
+    @IBOutlet weak var customerCount: UILabel!
+    
+
+    @IBOutlet weak var flashMessage: UILabel!
+    
+    @IBOutlet weak var driverName: UITextField!
+    
+    
+    @IBOutlet weak var carRegistration: UITextField!
+    
+    
+    @IBAction func savePressed(sender: AnyObject) {
+        
+        let user = User(name: driverName.text!, carReg: carRegistration.text!)
+        repository.add(user)
+        carRegistration.text = ""
+        driverName.text = ""
+        
+        customerCount.text = "Number of users: \(repository.getAll().count)"
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
