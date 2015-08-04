@@ -29,8 +29,10 @@ protocol UserRepository {
 
 class UserRepositoryFactory {
     
+    private static let instance: UserRepository = ArrayUserRepository()
+    
     class func getRepository() -> UserRepository {
-        return ArrayUserRepository()
+        return instance
     }
     
 }
