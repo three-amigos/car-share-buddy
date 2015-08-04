@@ -37,7 +37,9 @@ class DriversViewController: UITableViewController {
         
         let driver: User = repository.getAll()[indexPath.row]
         
-        cell.textLabel?.text = "\(driver.name)"
+        let altCarReg = "No Vehicle Registration"
+        
+        cell.textLabel?.text = "\(driver.name): \(driver.carReg ?? altCarReg)"
         
         return cell
     

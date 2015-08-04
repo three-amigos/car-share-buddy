@@ -25,7 +25,13 @@ class NewDriverViewController: UIViewController {
     
     @IBAction func savePressed(sender: AnyObject) {
         
-        let user = User(name: driverName.text!, carReg: carRegistration.text!)
+        var reg = carRegistration.text;
+        
+        if reg! == "" {
+            reg = nil
+        }
+        
+        let user = User(name: driverName.text!, carReg: reg)
         repository.add(user)
         carRegistration.text = ""
         driverName.text = ""
