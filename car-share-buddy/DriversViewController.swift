@@ -10,10 +10,16 @@ import UIKit
 
 class DriversViewController: UITableViewController {
 
+    let repository = UserRepositoryFactory.getRepository()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        self.tableView.reloadData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,6 +27,21 @@ class DriversViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return repository.getAll().count
+    }
+    
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
+        let cell = self.tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as UITableViewCell
+        
+        let driver: User = repository.getAll()[indexPath.row]
+        
+        cell.textLabel?.text = "\(driver.name)"
+        
+        return cell
+    
+    }
 
     /*
     // MARK: - Navigation
