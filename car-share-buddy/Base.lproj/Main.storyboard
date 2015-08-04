@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8152.3" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="oww-He-Tcv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8164.2" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="oww-He-Tcv">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8124.4"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8135.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -81,35 +81,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lUg-JD-KAt">
-                                <rect key="frame" x="92" y="301" width="34" height="30"/>
-                                <state key="normal" title="Save"/>
-                                <connections>
-                                    <action selector="savePressed:" destination="o2j-Y3-rPe" eventType="touchUpInside" id="T0q-3A-zPC"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yIC-oK-vQr">
-                                <rect key="frame" x="207" y="301" width="48" height="30"/>
-                                <state key="normal" title="Cancel"/>
-                            </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZFP-CJ-Ruj">
-                                <rect key="frame" x="129" y="151" width="205" height="30"/>
+                                <rect key="frame" x="137" y="151" width="218" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M4k-1K-Rla">
-                                <rect key="frame" x="129" y="231" width="205" height="30"/>
+                                <rect key="frame" x="137" y="231" width="218" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wrj-G9-oMK">
-                                <rect key="frame" x="20" y="151" width="45" height="21"/>
+                                <rect key="frame" x="20" y="151" width="96" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Car" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TsH-Qv-8eV">
-                                <rect key="frame" x="20" y="231" width="27" height="21"/>
+                                <rect key="frame" x="20" y="231" width="80" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -120,14 +109,25 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lUg-JD-KAt">
+                                <rect key="frame" x="92" y="284" width="34" height="30"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="savePressed:" destination="o2j-Y3-rPe" eventType="touchUpInside" id="T0q-3A-zPC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yIC-oK-vQr">
+                                <rect key="frame" x="207" y="284" width="48" height="30"/>
+                                <state key="normal" title="Cancel"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="M4k-1K-Rla" secondAttribute="trailing" constant="21" id="2IN-aa-IYg"/>
                             <constraint firstAttribute="trailingMargin" secondItem="w1D-Wh-Gkb" secondAttribute="trailing" constant="50" id="4JW-ak-37o"/>
+                            <constraint firstItem="ZFP-CJ-Ruj" firstAttribute="trailing" secondItem="Tp5-rJ-Uwc" secondAttribute="trailingMargin" constant="5" id="Eun-Cn-ypA"/>
+                            <constraint firstItem="M4k-1K-Rla" firstAttribute="trailing" secondItem="Tp5-rJ-Uwc" secondAttribute="trailingMargin" id="k2e-2A-BeV"/>
                             <constraint firstItem="w1D-Wh-Gkb" firstAttribute="leading" secondItem="Tp5-rJ-Uwc" secondAttribute="leadingMargin" constant="50" id="kMN-Mv-Ch6"/>
                             <constraint firstItem="w1D-Wh-Gkb" firstAttribute="top" secondItem="Fa5-3B-EY2" secondAttribute="bottom" constant="28" id="mhI-x4-hqT"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="ZFP-CJ-Ruj" secondAttribute="trailing" constant="21" id="xQt-Zt-O1B"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="New Driver" id="3Bf-D0-1Oj">
