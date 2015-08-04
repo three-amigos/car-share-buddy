@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DriversViewController: UIViewController {
+class DriversViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
