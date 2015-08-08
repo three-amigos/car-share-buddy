@@ -10,7 +10,7 @@ import UIKit
 
 class DriversViewController: UITableViewController {
 
-    let repository = UserRepositoryFactory.getRepository()
+    let repository = DriverRepositoryFactory.getRepository()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,7 +35,7 @@ class DriversViewController: UITableViewController {
         
         let cell = self.tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as UITableViewCell
         
-        let driver: User = repository.getAll()[indexPath.row]
+        let driver: Driver = repository.getAll()[indexPath.row]
         
         let altCarReg = "No Vehicle Registration"
         

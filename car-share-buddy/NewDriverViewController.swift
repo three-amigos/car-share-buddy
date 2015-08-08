@@ -8,7 +8,7 @@
 
 import UIKit
 
-let repository = UserRepositoryFactory.getRepository()
+let repository = DriverRepositoryFactory.getRepository()
 
 class NewDriverViewController: UIViewController {
     
@@ -31,8 +31,8 @@ class NewDriverViewController: UIViewController {
             reg = nil
         }
         
-        let user = User(name: driverName.text!, carReg: reg)
-        repository.add(user)
+        let driver = Driver(name: driverName.text!, carReg: reg)
+        repository.add(driver)
         carRegistration.text = ""
         driverName.text = ""
         

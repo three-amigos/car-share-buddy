@@ -14,8 +14,8 @@
 		84065A9D1B6C2C610056BF98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84065A9C1B6C2C610056BF98 /* Assets.xcassets */; };
 		84065AA01B6C2C610056BF98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84065A9E1B6C2C610056BF98 /* LaunchScreen.storyboard */; };
 		84065AAB1B6C2C610056BF98 /* car_share_buddyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84065AAA1B6C2C610056BF98 /* car_share_buddyTests.swift */; };
-		84065AB71B6C32040056BF98 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84065AB61B6C32040056BF98 /* UserRepository.swift */; };
-		84065AB81B6C32040056BF98 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84065AB61B6C32040056BF98 /* UserRepository.swift */; };
+		84065AB71B6C32040056BF98 /* DriverRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84065AB61B6C32040056BF98 /* DriverRepository.swift */; };
+		84065AB81B6C32040056BF98 /* DriverRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84065AB61B6C32040056BF98 /* DriverRepository.swift */; };
 		84065ABC1B6C3D2B0056BF98 /* UserRepositoryIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84065ABB1B6C3D2B0056BF98 /* UserRepositoryIntegrationTests.swift */; };
 		842013041B6D3CA000809BD2 /* DriversViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842013031B6D3CA000809BD2 /* DriversViewController.swift */; };
 		842013061B6D3CD900809BD2 /* NewDriverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842013051B6D3CD900809BD2 /* NewDriverViewController.swift */; };
@@ -43,7 +43,7 @@
 		84065AA61B6C2C610056BF98 /* car-share-buddyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "car-share-buddyTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84065AAA1B6C2C610056BF98 /* car_share_buddyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = car_share_buddyTests.swift; sourceTree = "<group>"; };
 		84065AAC1B6C2C610056BF98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		84065AB61B6C32040056BF98 /* UserRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		84065AB61B6C32040056BF98 /* DriverRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DriverRepository.swift; sourceTree = "<group>"; };
 		84065ABB1B6C3D2B0056BF98 /* UserRepositoryIntegrationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRepositoryIntegrationTests.swift; sourceTree = "<group>"; };
 		842013031B6D3CA000809BD2 /* DriversViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DriversViewController.swift; sourceTree = "<group>"; };
 		842013051B6D3CD900809BD2 /* NewDriverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewDriverViewController.swift; sourceTree = "<group>"; };
@@ -113,7 +113,7 @@
 		84DADF2A1B6D1B0900221641 /* core */ = {
 			isa = PBXGroup;
 			children = (
-				84065AB61B6C32040056BF98 /* UserRepository.swift */,
+				84065AB61B6C32040056BF98 /* DriverRepository.swift */,
 			);
 			name = core;
 			sourceTree = "<group>";
@@ -230,7 +230,7 @@
 			files = (
 				84065A951B6C2C610056BF98 /* MainViewController.swift in Sources */,
 				84065A9B1B6C2C610056BF98 /* car_share_buddy.xcdatamodeld in Sources */,
-				84065AB71B6C32040056BF98 /* UserRepository.swift in Sources */,
+				84065AB71B6C32040056BF98 /* DriverRepository.swift in Sources */,
 				842013061B6D3CD900809BD2 /* NewDriverViewController.swift in Sources */,
 				84065A931B6C2C610056BF98 /* AppDelegate.swift in Sources */,
 				842013041B6D3CA000809BD2 /* DriversViewController.swift in Sources */,
@@ -241,7 +241,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84065AB81B6C32040056BF98 /* UserRepository.swift in Sources */,
+				84065AB81B6C32040056BF98 /* DriverRepository.swift in Sources */,
 				84065AAB1B6C2C610056BF98 /* car_share_buddyTests.swift in Sources */,
 				84065ABC1B6C3D2B0056BF98 /* UserRepositoryIntegrationTests.swift in Sources */,
 			);
